@@ -42,13 +42,13 @@
 
 
 		<config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
-			<intent-filter>
+			<intent-filter android:exported="true">
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
 				<data android:scheme="$URL_SCHEME" />
 			</intent-filter>
-			<intent-filter android:autoVerify="true">
+			<intent-filter android:autoVerify="true" android:exported="true">
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
